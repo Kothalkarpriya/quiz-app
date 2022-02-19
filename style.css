@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
 :root {
     --primary: #F8F9FA;
     --theme: #212529;
-    --light-grey:#CED4DA;
-    --little-dark-grey:#495057;
+    --light-grey: #CED4DA;
+    --little-dark-grey: #495057;
     --little-light-grey: #ADB5BD;
     --bottom-shadow: 0px 15px 10px -15px var(--light-grey);
     --right-bottom-shadow: 15px -10px 15px -15px var(--little-dark-grey);
@@ -11,45 +12,45 @@
     --all-side-bold-shadow: 0px 0px 10px 10px var(--little-dark-grey);
     --font: 'Gideon Roman', cursive;
 }
-body{
+
+body {
     background-color: var(--theme);
-    color:var(--primary);
-    
+    color: var(--primary);
 }
 
-.navbar{
-    display:flex;
+.navbar {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:1rem;
+    gap: 1rem;
     box-shadow: var(--bottom-shadow);
     font-family: var(--font);
 }
-.nav-brand{
-    padding-left:1rem;
+
+.nav-brand {
+    padding-left: 1rem;
 }
-.nav-brand-link{
+
+a {
     text-decoration: none;
     color: var(--primary);
 }
-.nav-collapse{
+
+.nav-collapse {
     padding: 1rem;
 }
-.nav-list-group{
+
+.nav-list-group {
     list-style: none;
-    display:inline-flex;
-}
-.nav-collapse .list-ele{
-   padding-left:1rem;
+    display: inline-flex;
 }
 
-.nav-collapse .nav-link{
-    text-decoration: none;
-    color:var(--primary);
+.nav-collapse .list-ele {
+    padding-left: 1rem;
 }
 
-.main{
-    padding:1rem;
+.main {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,12 +58,83 @@ body{
     font-family: var(--font);
 }
 
-.main-container{
+.main-container {
     padding: 1rem;
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
 /* .quiz-type{
     
 } */
+.quiz-type-one {
+    padding: 1rem;
+    width: 20rem;
+    height: 15rem;
+    background-image: url(/assets/general.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem;
+    color: var(--primary);
+}
+
+.quiz-type-one,
+.quiz-type-two,
+.quiz-type-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quiz-type-one:hover,
+.quiz-type-two:hover,
+.quiz-type-three:hover {
+    box-shadow: var(--all-side-shadow);
+    width: 22rem;
+}
+
+.quiz-type-two {
+    padding: 1rem;
+    width: 20rem;
+    height: 15rem;
+    background-image: url(/assets/harry.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem;
+    scale: (1);
+    color: var(--primary);
+}
+
+.quiz-type-three {
+    padding: 1rem;
+    width: 20rem;
+    height: 15rem;
+    background-image: url(/assets/logical.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem;
+    color: var(--theme);
+}
+
+.quiz-type .details {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer {
+    padding: 1rem;
+    margin:auto;
+    text-align: center;
+    bottom: 0;
+    font-family: var(--font);
+}
