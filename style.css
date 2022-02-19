@@ -64,20 +64,8 @@ a {
     flex-wrap: wrap;
     gap: 2rem;
 }
-
-/* .quiz-type{
-    
-} */
 .quiz-type-one {
-    padding: 1rem;
-    width: 20rem;
-    height: 15rem;
     background-image: url(/assets/general.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 1rem;
     color: var(--primary);
 }
 
@@ -88,7 +76,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    height: 15rem;
 }
 
 .quiz-type-one:hover,
@@ -99,29 +94,12 @@ a {
 }
 
 .quiz-type-two {
-    padding: 1rem;
-    width: 20rem;
-    height: 15rem;
     background-image: url(/assets/harry.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 1rem;
-    scale: (1);
     color: var(--primary);
 }
 
 .quiz-type-three {
-    padding: 1rem;
-    width: 20rem;
-    height: 15rem;
     background-image: url(/assets/logical.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 1rem;
     color: var(--theme);
 }
 
