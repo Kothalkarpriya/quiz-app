@@ -109,6 +109,19 @@ a {
     font-weight: bold;
 }
 
+/* rules -css */
+.rules{
+    box-shadow: var(--all-side-shadow);
+    padding:1rem;
+    background-color: var(--light-grey);
+    color:var(--theme);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wish{
+    text-align: center;
+    padding:1rem;
+}
 footer {
     padding: 1rem;
     margin:auto;
