@@ -6,11 +6,15 @@
     --light-grey: #CED4DA;
     --little-dark-grey: #495057;
     --little-light-grey: #ADB5BD;
+    --red-color:#EF233C;
+    --green-color: #2B9348;
     --bottom-shadow: 0px 15px 10px -15px var(--light-grey);
     --right-bottom-shadow: 15px -10px 15px -15px var(--little-dark-grey);
     --all-side-shadow: 0px 0px 2px 2px var(--little-light-grey);
     --all-side-bold-shadow: 0px 0px 10px 10px var(--little-dark-grey);
     --font: 'Gideon Roman', cursive;
+    --all-side-red-border: 0px 0px 2px 2px var(--red-color);
+    --all-side-green-border: 0px 0px 2px 2px var(--green-color);
 }
 
 body {
@@ -182,7 +186,24 @@ a {
 .ans-list {
     margin: 0.5rem 0;
 }
-
+/* result */
+.result{
+    display:block;
+}
+.result .right-ans{
+    box-shadow: var(--all-side-green-border);
+    padding:0.5rem;
+}
+.right{
+    background-color: var(--green-color);
+}
+.wrong-ans{
+    box-shadow: var(--all-side-red-border);
+    padding:0.5rem;
+}
+.wrong{
+    background-color: var(--red-color);
+}
 footer {
     padding: 1rem;
     margin: auto;
